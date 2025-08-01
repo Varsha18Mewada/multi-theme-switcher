@@ -1,7 +1,8 @@
 export const theme2 = {
-    name: "Dark with Sidebar",
-    header: "bg-gray-800 text-white shadow",
-    textColor: "text-black",
-    active: "text-gray-800 bg-gray-100 px-4 py-2 rounded",
-    inactive: "text-white bg-gray-800",
+    textColor: "text-gray-100",
+    bgColor: "bg-gray-800",
+    activeTextColor: "text-gray-800",
+    activeBgColor: "bg-gray-100",
+    border: "border-gray-800"
+
 };

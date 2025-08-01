@@ -25,16 +25,18 @@ export const Header = () => {
 
   return (
     <header
-      className={`w-full fixed top-0 left-0 px-4 py-3 ${theme.header} flex justify-between items-center`}
+      className={`w-full fixed top-0 left-0 px-4 py-3 ${theme.bgColor} ${theme.textColor} flex justify-between items-center`}
     >
       <span className="text-lg font-bold">ThemeApp</span>
       <div className="flex gap-4 items-center">
-        <nav className="flex flex-end gap-4">
+        <nav className="flex flex-end gap-4 items-center">
           <NavLink
             to="/"
             className={({ isActive }) =>
-              `hover:${theme.active} ${
-                isActive ? theme.active : theme.inactive
+              `${
+                isActive
+                  ? `px-4 py-2 rounded ${theme.activeBgColor} ${theme.activeTextColor}`
+                  : `${theme.bgColor} ${theme.textColor}`
               }`
             }
           >
@@ -43,8 +45,10 @@ export const Header = () => {
           <NavLink
             to="/about"
             className={({ isActive }) =>
-              `hover:${theme.active} ${
-                isActive ? theme.active : theme.inactive
+              `${
+                isActive
+                  ? `px-4 py-2 rounded ${theme.activeBgColor} ${theme.activeTextColor}`
+                  : `${theme.bgColor} ${theme.textColor}`
               }`
             }
           >
@@ -53,22 +57,30 @@ export const Header = () => {
           <NavLink
             to="/contact"
             className={({ isActive }) =>
-              `hover:${theme.active} ${
-                isActive ? theme.active : theme.inactive
+              `${
+                isActive
+                  ? `px-4 py-2 rounded ${theme.activeBgColor} ${theme.activeTextColor}`
+                  : `${theme.bgColor} ${theme.textColor}`
               }`
             }
           >
             Contact
           </NavLink>
-                  <select
-                      value={currentTheme}
-                      onChange={handleThemeChange}
-                      className={`p-1 border rounded `}
-                  >
-                      <option value="theme1" className={theme.textColor}>Theme 1</option>
-                      <option value="theme2" className={theme.textColor}>Theme 2</option>
-                      <option value="theme3" className={theme.textColor}>Theme 3</option>
-                  </select>
+          <select
+            value={currentTheme}
+            onChange={handleThemeChange}
+            className={`p-1 border rounded`}
+          >
+            <option value="theme1" className={"text-black"}>
+              Theme 1
+            </option>
+            <option value="theme2" className={"text-black"}>
+              Theme 2
+            </option>
+            <option value="theme3" className={"text-black"}>
+              Theme 3
+            </option>
+          </select>
         </nav>
       </div>
     </header>

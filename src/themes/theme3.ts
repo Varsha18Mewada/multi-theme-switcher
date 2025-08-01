@@ -1,7 +1,7 @@
 export const theme3 = {
-    name: "Colorful & Playful",
-    header: "bg-pink-400 text-indigo-100 shadow",
-    textColor: "text-black",
-    active: "text-pink-400 bg-indigo-100 px-4 py-2 rounded",
-    inactive: "text-indigo-100 bg-pink-400",
+    textColor: "text-indigo-100",
+    bgColor: "bg-pink-400",
+    activeBgColor: "bg-indigo-100",
+    activeTextColor: "text-pink-400",
+    border:"border-pink-400"
 };
