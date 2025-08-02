@@ -31,20 +31,20 @@ export const Contact = () => {
                     <input
                         type="text"
                         placeholder="Your Name"
-                        className={`w-full px-4 py-2 border rounded ${theme.border} focus:outline-none focus:ring-2 focus:ring-blue-400`}
+                        className={`w-full px-4 py-2 border rounded ${theme.border} `}
                     />
                     <input
                         type="email"
                         placeholder="Your Email"
-                        className={`w-full px-4 py-2 border rounded ${theme.border} focus:outline-none focus:ring-2 focus:ring-blue-400`}
+                        className={`w-full px-4 py-2 border rounded ${theme.border} `}
                     />
                     <textarea
                         rows={4}
                         placeholder="Your Message"
-                        className={`w-full px-4 py-2 border rounded ${theme.border} focus:outline-none focus:ring-2 focus:ring-blue-400`}
+                        className={`w-full px-4 py-2 border rounded ${theme.border} `}
                     />
                     <button
-                        className={`${theme.textColor} ${theme.bgColor} px-4 py-2 rounded`}
+                        className={`${theme.textColor} ${theme.bgColor} ${theme.border} border px-4 py-2 rounded`}
                     >
                         Send
                     </button>
