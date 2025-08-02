@@ -1,6 +1,15 @@
-Steps to run the application
-Clone the repository:
+# Multi Theme Switcher App
+##  Steps to Run the Application
+
+# Clone the repository:
 https://github.com/Varsha18Mewada/multi-theme-switcher.git
 
-Install  dependencies: npm install
-Start the App : npm run dev
+# Navigate to the project folder
+cd multi-theme-switcher
+
+# Install  dependencies
+npm install
+
+# Start the App 
+npm run dev
+
